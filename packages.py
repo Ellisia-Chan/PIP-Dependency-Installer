@@ -12,11 +12,11 @@ dependencies = [
 
 
 def install_package(package):
-    """Install a package using pip."""
+    # Install a package using pip
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
 def check_and_install_pip():
-    """Check if pip is installed, and install if it's not."""
+    # Check if pip is installed, and install if it's not
     try:
         import pip
         print("pip is already installed.")
@@ -31,9 +31,7 @@ def InitializePackages():
     # Check if pip is installed
     check_and_install_pip()
 
-    dependencies_list = dependencies
-
-    for package in dependencies_list:
+    for package in dependencies:
         try:
             install_package(package)
             print(f"Installed {package}.")
