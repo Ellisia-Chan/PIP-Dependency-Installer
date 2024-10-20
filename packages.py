@@ -4,7 +4,7 @@ import sys
 # =======================================
 # List of dependencies to install
 #
-# Add your depencies here
+# Add your dependencies here
 # =======================================
 dependencies = [
     "prettytable"
